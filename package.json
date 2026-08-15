@@ -6,8 +6,8 @@
         "build": "vite build",
         "build:ssr": "vite build && vite build --ssr",
         "dev": "vite",
-        "format": "prettier --write resources/",
-        "format:check": "prettier --check resources/",
+        "format:check": "prettier --check \"resources/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+        "format:fix": "prettier --write \"resources/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
         "lint": "eslint . --fix",
         "lint:check": "eslint .",
         "types:check": "tsc --noEmit"
@@ -35,6 +35,7 @@
         "@types/react": "^19.2.0",
         "@types/react-dom": "^19.2.0",
         "@vitejs/plugin-react": "^5.2.0",
+        "axios": "^1.19.0",
         "clsx": "^2.1.1",
         "concurrently": "^10.0.3",
         "globals": "^15.14.0",
